@@ -1,12 +1,5 @@
-
 spring:
   application:
     name: eureka-server
-#  profiles:
-#    active:
-#      - dev
-  #      - git
   config:
-    import: optional:configserver:http://configserver:8071
-
-
+    import: configserver:http://configserver:8071
